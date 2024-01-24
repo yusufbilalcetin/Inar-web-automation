@@ -24,7 +24,12 @@ public class NormalIframeTest extends Hooks {
 
 		// 6.Exit from the iframe
 		pages.getNormalIframePage().switchToParentFrame();
-
+		try {
+			Thread.sleep(3000);
+		}
+		catch (InterruptedException e) {
+			throw new RuntimeException(e);
+		}
 		// 7.verify condition that more information button in iframe works successfully
 		String expectedText = "Inar academy";
 		String actualText = pages.getNormalIframePage().getTitleOfIframe();

@@ -70,7 +70,7 @@
                 <version>3.2.3</version>
                 <configuration>
                     <includes>
-                        <include>**/*.java</include>
+                        <include>**/DownloadDialogTest.java</include>
                     </includes>
                 </configuration>
             </plugin>

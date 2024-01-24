@@ -1,184 +1,195 @@
 package utils;
 
-import ProcessBarPage.DownloadDialogPage;
-import alerts.Alert_Type_Page;
-import autoComplete.AccentFoldingPage;
-import autoComplete.MultipleAndRemotePage;
-import controlGroup.ToolBarTabPage;
-import datePicker.DisplayMultipleMonthsPage;
+import pages.Menu.IconsPage;
+import pages.ProcessBar.DownloadDialogPage;
+import pages.alerts.Alert_Type_Page;
+import pages.autoComplete.AccentFoldingPage;
+import pages.autoComplete.MultipleAndRemotePage;
+import pages.controlGroup.ToolBarTabPage;
+import pages.datePicker.DisplayMultipleMonthsPage;
 import draggable.*;
-import droppable.DroppableAcceptPage;
-import droppable.DroppableDefFuncPage;
-import droppable.RevertDraggablePositionPage;
-import iframe.NestedIframePage;
-import iframe.NormalIframePage;
+import pages.draggable.*;
+import pages.droppable.DroppableAcceptPage;
+import pages.droppable.DroppableDefFuncPage;
+import pages.droppable.RevertDraggablePositionPage;
+import pages.iframe.NestedIframePage;
+import pages.iframe.NormalIframePage;
 
 import pages.getHomePage;
 import pages.WebAutomationPage;
 
-import resizable.AnimatePage;
-import resizable.ResizableDefFuncPage;
-import selectable.SelectableDefFuncPage;
-import selectable.SerializePage;
+import pages.resizable.AnimatePage;
+import pages.resizable.ResizableDefFuncPage;
+import pages.selectable.SelectableDefFuncPage;
+import pages.selectable.SerializePage;
+
 
 public class Pages {
 
-	private Alert_Type_Page alertTypesPage;
+    private Alert_Type_Page alertTypesPage;
 
-	private AutoScrollingPage autoScrollingPage;
+    private AutoScrollingPage autoScrollingPage;
 
-	private DraggableDefFuncPage draggableDefFuncPage;
+    private DraggableDefFuncPage draggableDefFuncPage;
 
-	private DroppableDefFuncPage droppableDefFuncPage;
+    private DroppableDefFuncPage droppableDefFuncPage;
 
-	private getHomePage homePage;
+    private getHomePage homePage;
 
-	private NestedIframePage nestedIframePage;
+    private NestedIframePage nestedIframePage;
 
-	private ResizableDefFuncPage resizableDefFuncPage;
+    private ResizableDefFuncPage resizableDefFuncPage;
 
-	private SelectableDefFuncPage selectableDefFuncPage;
+    private SelectableDefFuncPage selectableDefFuncPage;
 
-	private WebAutomationPage webAutomationPage;
+    private WebAutomationPage webAutomationPage;
 
-	private SerializePage serializePage;
+    private SerializePage serializePage;
 
-	private AnimatePage animatePage;
+    private AnimatePage animatePage;
 
-	private ConstrainMovementPage constrainMovementPage;
+    private ConstrainMovementPage constrainMovementPage;
 
-	private CursorStylePage cursorStylePage;
+    private CursorStylePage cursorStylePage;
 
-	private HandlesPage handlesPage;
+    private HandlesPage handlesPage;
 
-	private DroppableAcceptPage droppableAcceptPage;
+    private DroppableAcceptPage droppableAcceptPage;
 
-	private RevertDraggablePositionPage revertDraggablePositionPage;
+    private RevertDraggablePositionPage revertDraggablePositionPage;
 
-	private MultipleAndRemotePage multipleAndRemotePage;
+    private MultipleAndRemotePage multipleAndRemotePage;
 
-	private AccentFoldingPage accentFoldingPage;
+    private AccentFoldingPage accentFoldingPage;
 
-	private ToolBarTabPage toolBarTabPage;
+    private ToolBarTabPage toolBarTabPage;
 
-	private DisplayMultipleMonthsPage displayMultipleMonthsPage;
+    private DisplayMultipleMonthsPage displayMultipleMonthsPage;
 
-	private NormalIframePage normalIframePage;
+    private NormalIframePage normalIframePage;
 
-	private DownloadDialogPage downloadDialogPage;
+    private DownloadDialogPage downloadDialogPage;
 
-	public Pages() {
-		homePage = new getHomePage();
-		webAutomationPage = new WebAutomationPage();
-		draggableDefFuncPage = new DraggableDefFuncPage();
-		autoScrollingPage = new AutoScrollingPage();
-		droppableDefFuncPage = new DroppableDefFuncPage();
-		resizableDefFuncPage = new ResizableDefFuncPage();
-		selectableDefFuncPage = new SelectableDefFuncPage();
-		nestedIframePage = new NestedIframePage();
-		serializePage = new SerializePage();
-		alertTypesPage = new Alert_Type_Page();
-		animatePage = new AnimatePage();
-		constrainMovementPage = new ConstrainMovementPage();
-		cursorStylePage = new CursorStylePage();
-		handlesPage = new HandlesPage();
-		droppableAcceptPage = new DroppableAcceptPage();
-		revertDraggablePositionPage = new RevertDraggablePositionPage();
-		multipleAndRemotePage = new MultipleAndRemotePage();
-		accentFoldingPage = new AccentFoldingPage();
-		toolBarTabPage = new ToolBarTabPage();
-		displayMultipleMonthsPage = new DisplayMultipleMonthsPage();
-		normalIframePage = new NormalIframePage();
-		downloadDialogPage = new DownloadDialogPage();
+    private IconsPage iconsPage;
 
-	}
 
-	public getHomePage getHomePage() {
-		return homePage;
-	}
+    public Pages() {
+        homePage = new getHomePage();
+        webAutomationPage = new WebAutomationPage();
+        draggableDefFuncPage = new DraggableDefFuncPage();
+        autoScrollingPage = new AutoScrollingPage();
+        droppableDefFuncPage = new DroppableDefFuncPage();
+        resizableDefFuncPage = new ResizableDefFuncPage();
+        selectableDefFuncPage = new SelectableDefFuncPage();
+        nestedIframePage = new NestedIframePage();
+        serializePage = new SerializePage();
+        alertTypesPage = new Alert_Type_Page();
+        animatePage = new AnimatePage();
+        constrainMovementPage = new ConstrainMovementPage();
+        cursorStylePage = new CursorStylePage();
+        handlesPage = new HandlesPage();
+        droppableAcceptPage = new DroppableAcceptPage();
+        revertDraggablePositionPage = new RevertDraggablePositionPage();
+        multipleAndRemotePage = new MultipleAndRemotePage();
+        accentFoldingPage = new AccentFoldingPage();
+        toolBarTabPage = new ToolBarTabPage();
+        displayMultipleMonthsPage = new DisplayMultipleMonthsPage();
+        normalIframePage = new NormalIframePage();
+        downloadDialogPage = new DownloadDialogPage();
+        iconsPage = new IconsPage();
 
-	public AnimatePage getAnimatePage() {
-		return animatePage;
-	}
+    }
 
-	public NestedIframePage getNestedIframePage() {
-		return nestedIframePage;
-	}
+    public getHomePage getHomePage() {
+        return homePage;
+    }
 
-	public Alert_Type_Page getAlertTypesPage() {
-		return alertTypesPage;
-	}
+    public AnimatePage getAnimatePage() {
+        return animatePage;
+    }
 
-	public WebAutomationPage getWebAutomationPage() {
-		return webAutomationPage;
-	}
+    public NestedIframePage getNestedIframePage() {
+        return nestedIframePage;
+    }
 
-	public MultipleAndRemotePage getMultipleAndRemotePage() {
-		return multipleAndRemotePage;
-	}
+    public Alert_Type_Page getAlertTypesPage() {
+        return alertTypesPage;
+    }
 
-	public DraggableDefFuncPage getDraggableDefFuncPage() {
-		return draggableDefFuncPage;
-	}
+    public WebAutomationPage getWebAutomationPage() {
+        return webAutomationPage;
+    }
 
-	public AutoScrollingPage getAutoScrollingPage() {
-		return autoScrollingPage;
-	}
+    public MultipleAndRemotePage getMultipleAndRemotePage() {
+        return multipleAndRemotePage;
+    }
 
-	public DroppableDefFuncPage getDroppableDefFuncPage() {
-		return droppableDefFuncPage;
-	}
+    public DraggableDefFuncPage getDraggableDefFuncPage() {
+        return draggableDefFuncPage;
+    }
 
-	public ResizableDefFuncPage getResizableDefFuncPage() {
-		return resizableDefFuncPage;
-	}
+    public AutoScrollingPage getAutoScrollingPage() {
+        return autoScrollingPage;
+    }
 
-	public SelectableDefFuncPage getSelectableDefFuncPage() {
-		return selectableDefFuncPage;
-	}
+    public DroppableDefFuncPage getDroppableDefFuncPage() {
+        return droppableDefFuncPage;
+    }
 
-	public SerializePage getSerializePage() {
-		return serializePage;
-	}
+    public ResizableDefFuncPage getResizableDefFuncPage() {
+        return resizableDefFuncPage;
+    }
 
-	public ConstrainMovementPage getConstrainMovementsPage() {
-		return constrainMovementPage;
-	}
+    public SelectableDefFuncPage getSelectableDefFuncPage() {
+        return selectableDefFuncPage;
+    }
 
-	public CursorStylePage getCursorStylePage() {
-		return cursorStylePage;
-	}
+    public SerializePage getSerializePage() {
+        return serializePage;
+    }
 
-	public HandlesPage getHandlesPage() {
-		return handlesPage;
-	}
+    public ConstrainMovementPage getConstrainMovementsPage() {
+        return constrainMovementPage;
+    }
 
-	public DroppableAcceptPage getDroppableAcceptPage() {
-		return droppableAcceptPage;
-	}
+    public CursorStylePage getCursorStylePage() {
+        return cursorStylePage;
+    }
 
-	public RevertDraggablePositionPage getRevertDraggablePositionPage() {
-		return revertDraggablePositionPage;
-	}
+    public HandlesPage getHandlesPage() {
+        return handlesPage;
+    }
 
-	public AccentFoldingPage getAccentFoldingPage() {
-		return accentFoldingPage;
-	}
+    public DroppableAcceptPage getDroppableAcceptPage() {
+        return droppableAcceptPage;
+    }
 
-	public ToolBarTabPage getToolBarTabPage() {
-		return toolBarTabPage;
-	}
+    public RevertDraggablePositionPage getRevertDraggablePositionPage() {
+        return revertDraggablePositionPage;
+    }
 
-	public DisplayMultipleMonthsPage getDisplayMultipleMonthsPage() {
-		return displayMultipleMonthsPage;
-	}
+    public AccentFoldingPage getAccentFoldingPage() {
+        return accentFoldingPage;
+    }
 
-	public NormalIframePage getNormalIframePage() {
-		return normalIframePage;
-	}
+    public ToolBarTabPage getToolBarTabPage() {
+        return toolBarTabPage;
+    }
 
-	public DownloadDialogPage getDownloadDialogPage() {
-		return downloadDialogPage;
-	}
+    public DisplayMultipleMonthsPage getDisplayMultipleMonthsPage() {
+        return displayMultipleMonthsPage;
+    }
+
+    public NormalIframePage getNormalIframePage() {
+        return normalIframePage;
+    }
+
+    public DownloadDialogPage getDownloadDialogPage() {
+        return downloadDialogPage;
+    }
+
+    public IconsPage getIconsPage() {
+        return iconsPage;
+    }
 
 }
